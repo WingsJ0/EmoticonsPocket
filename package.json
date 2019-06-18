@@ -1,0 +1,50 @@
+{
+  "name": "emoticonspocket",
+  "version": "1.0.0",
+  "description": "A tool for restoring and using emoticons.",
+  "main": "./src/electron/Main.production.js",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "launch": "electron ./src/electron/Main.js --enable-logging",
+    "build": "webpack --config webpack.config.build.js",
+    "package": "electron-builder"
+  },
+  "author": "WingsJ",
+  "license": "ISC",
+  "build": {
+    "appId": "WingsJ.EmoticonsPocket",
+    "productName":"颜文字口袋",
+    "directories": {
+      "output":"package"
+    },
+    "mac": {
+      "category": "WingsJ.EmoticonsPocket"
+    },
+    "win": {  
+      "icon": "./dist/Icon.png",
+      "extraFiles": [
+        "dist/data/Directory.json",
+        "dist/data/Favorite.json",
+        "dist/Icon.png"
+      ]
+    } 
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^3.0.0",
+    "electron": "^5.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  }
+}
