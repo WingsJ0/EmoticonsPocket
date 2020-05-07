@@ -19,7 +19,7 @@
     import Browser from '@/component/browser/Browser.vue';
     import Preview from '@/component/preview/Preview.vue';
     import Control from '@/component/control/Control.vue';
-    import Edit from '@/component/edit/Edit.vue';
+    import Edit from '@/component/edit/edit.vue';
 
 /*接口*/
 
@@ -47,7 +47,7 @@
         position:relative;
         width:270px;
         user-select:none;
-        // border:1px solid grey;
+        border:1px solid grey;
 
         >.separator
         {

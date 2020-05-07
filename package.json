@@ -13,21 +13,21 @@
   "license": "ISC",
   "build": {
     "appId": "WingsJ.EmoticonsPocket",
-    "productName":"颜文字口袋",
+    "productName": "颜文字口袋",
     "directories": {
-      "output":"package"
+      "output": "package"
     },
     "mac": {
       "category": "WingsJ.EmoticonsPocket"
     },
-    "win": {  
+    "win": {
       "icon": "./dist/Icon.png",
       "extraFiles": [
         "dist/data/Directory.json",
         "dist/data/Favorite.json",
         "dist/Icon.png"
       ]
-    } 
+    }
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -36,6 +36,7 @@
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^3.0.0",
     "electron": "^5.0.4",
+    "electron-builder": "^22.6.0",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
