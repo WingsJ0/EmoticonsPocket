@@ -27,6 +27,11 @@
         "dist/data/Favorite.json",
         "dist/Icon.png"
       ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
     }
   },
   "devDependencies": {
